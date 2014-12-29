@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300italic);
+/* line 17, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -7,220 +9,235 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
+
+/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1;
 }
+
+/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
+
+/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-body {
-  font-size: 13px;
-  line-height: 1.5; 
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-  color: #000;
-}
 
-a {
-  color: #d5000d;
-  font-weight: bold;
-}
-
-header {
-  padding-top: 35px;
-  padding-bottom: 10px;
-}
-
-header h1 {
-  font-weight: bold;
-  letter-spacing: -1px;
-  font-size: 48px;
-  color: #303030;
-  line-height: 1.2;
-}
-
-header h2 {
-  letter-spacing: -1px;
-  font-size: 24px;
-  color: #aaa;
+/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
   font-weight: normal;
-  line-height: 1.3;
-}
-#downloads {
-  display: none;
-}
-#main_content {
-  padding-top: 20px;
+  vertical-align: middle;
 }
 
-code, pre {
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
-  color: #222;
-  margin-bottom: 30px;
-  font-size: 12px;
+/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
 }
 
-code {
-  padding: 0 3px;
+/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
 }
 
-pre {
-  border: solid 1px #ddd;
-  padding: 20px;
-  overflow: auto;
+/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
 }
-pre code {
+
+/* -------------------------------------------
+ * 	note: you can change size, color, etc
+ * 	of the font icons (mail, social icons) by editing 
+ * 	the i elements.
+ * -------------------------------------------
+ *
+ * full page background image */
+/* line 9, ../sass/index.sass */
+html {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* line 17, ../sass/index.sass */
+body {
+  overflow: hidden;
+}
+
+/* line 21, ../sass/index.sass */
+#content {
+  width: 320px;
+  height: 203px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+/* line 31, ../sass/index.sass */
+#content p {
+  position: relative;
+  top: 15px;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+/* line 42, ../sass/index.sass */
+#content p strong {
+  font-weight: 600;
+}
+/* line 50, ../sass/index.sass */
+#content h1 img {
+  width: 100%;
+  opacity: 0.9;
+}
+/* line 54, ../sass/index.sass */
+#content ul {
+  position: relative;
+  top: 35px;
+  text-align: center;
+}
+/* line 59, ../sass/index.sass */
+#content ul li {
+  display: inline-block;
+}
+/* line 62, ../sass/index.sass */
+#content ul li a {
+  text-decoration: none;
+}
+/* line 65, ../sass/index.sass */
+#content ul li i {
+  color: white;
+  font-size: 1.2em;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+/* line 73, ../sass/index.sass */
+#content ul li i:hover {
+  opacity: 0.9;
+}
+/* line 76, ../sass/index.sass */
+#content ul li {
+  padding-right: 20px;
+}
+/* line 79, ../sass/index.sass */
+#content ul li:nth-last-child(1) {
   padding: 0;
 }
 
-ul, ol, dl {
-  margin-bottom: 20px;
+/* line 84, ../sass/index.sass */
+.email {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 20px 25px;
 }
-
-
-/* COMMON STYLES */
-
-table {
-  width: 100%;
-  border: 1px solid #ebebeb;
-}
-
-th {
-  font-weight: 500;
-}
-
-td {
-  border: 1px solid #ebebeb;
-  text-align: center; 
-  font-weight: 300;
-}
-
-form {
-  background: #f2f2f2;
-  padding: 20px;
-  
-}
-
-
-/* GENERAL ELEMENT TYPE STYLES */
-
-h1 {
-  font-size: 2.8em;
-} 
-
-h2 {
-  font-size: 22px;
-  font-weight: bold;
-  color: #303030;
-  margin-bottom: 8px;
-} 
-
-h3 {
-  color: #d5000d;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 8px;
-} 
- 
-h4 {
-  font-size: 16px;
-  color: #303030;
-  font-weight: bold;
-} 
-
-h5 {
-  font-size: 1em;
-  color: #303030;
-} 
-
-h6 {
-  font-size: .8em;
-  color: #303030;
-} 
-
-p {
-  font-weight: 300;
-  margin-bottom: 20px;
-}
- 
-a {
+/* line 90, ../sass/index.sass */
+.email a {
   text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.25s;
 }
-
-p a {
-  font-weight: 400;
+/* line 95, ../sass/index.sass */
+.email a:hover span {
+  width: 50px;
+  opacity: 0.25;
 }
-
-blockquote {
-  font-size: 1.6em;
-  border-left: 10px solid #e9e9e9;
-  margin-bottom: 20px;
-  padding: 0 0 0 30px;
+/* line 99, ../sass/index.sass */
+.email a span {
+  font-size: 0.75em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  color: black;
+  width: 0px;
+  opacity: 0;
+  height: auto;
+  position: absolute;
+  bottom: 19px;
+  right: 50px;
+  background-color: white;
+  transition: all 0.25s;
+  text-align: center;
+  padding: 4px 0;
+  border-radius: 0.17em;
 }
-
-ul li {
-  list-style: disc inside;
-  padding-left: 20px;
+/* line 118, ../sass/index.sass */
+.email a i {
+  color: white;
+  opacity: 0.3;
+  transition: all 0.25s;
 }
-
-ol li {
-  list-style: decimal inside;
-  padding-left: 3px;
+/* line 123, ../sass/index.sass */
+.email a i:hover {
+  opacity: 0.5;
 }
-
-dl dd {
-  font-style: italic;
-  font-weight: 100;
-}
-
-footer {
-  margin-top: 40px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  font-size: 13px;
-  color: #aaa;
-}
-
-footer a {
-  color: #666;
-}
-
-/* MISC */
-.clearfix:after {
-  clear: both;
-  content: '.';
-  display: block;
-  visibility: hidden;
+/* line 127, ../sass/index.sass */
+.email a .arrow-right {
+  position: absolute;
+  right: -2.5px;
+  bottom: 6.5px;
+  width: 0;
   height: 0;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid white;
 }
 
-.clearfix {display: inline-block;}
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
+/* line 140, ../sass/index.sass */
+.created-by {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 20px 25px;
+}
+/* line 146, ../sass/index.sass */
+.created-by p {
+  color: white;
+  font-size: 0.7em;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.25px;
+  opacity: 0.3;
+}
+/* line 154, ../sass/index.sass */
+.created-by p a {
+  text-decoration: none;
+  color: slateblue;
+  cursor: pointer;
+}
+/* line 159, ../sass/index.sass */
+.created-by p i {
+  color: slateblue;
+  padding: 0 2px;
+  font-size: 0.7em;
+}
+
+/* line 7, ../sass/print.sass */
+::selection {
+  background-color: rgba(255, 255, 255, 0.1);
+}
